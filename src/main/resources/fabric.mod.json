@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "bridgetools",
+  "version": "${version}",
+  "name": "bridgetools",
+  "description": "a bridge tools mod. bind bridges to buttons and watch them unfold! (or whatever, idk. its autobridge that looks like legit)",
+  "authors": ["Vivelle_ (aka Philippe_levis)"],
+  "contact": {
+    "repo": "https://github.com/philippe_levis/bridgetools"
+  },
+  "license": "MIT",
+  "icon": "assets/bridgetools/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.philippe.fuckspigot.bridgetools.client.BridgetoolsClient"
+    ]
+  },
+  "mixins": [
+    "bridgetools.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
